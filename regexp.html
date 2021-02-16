@@ -1,0 +1,59 @@
+<!--
+
+ Author: Sarah Mahram
+
+ Class:  Software Engineering
+
+ Project: Lab 2 / regexp
+
+ Description: Number 6
+
+-->
+<!DOCTYPE html> 
+<html lang="en"> 
+
+    <head> 
+        <meta charset="UTF-8">  
+        <title>RegExp Tester</title>
+
+<!--CSS -->
+
+        <style type="text/css"> 
+            body{
+                text-align: center;
+                background-color: purple;
+            }
+
+        </style>
+
+    <!--In this JS function, the inputs will be taken in and compared-->
+        <script type="text/javascript">
+    
+        function RegExp(){
+            var str = document.getElementById("input1").value;
+            var exp = document.getElementById("input2").value;
+            
+            //Will display true for match and false for no match
+            var match = str.match(exp);
+    
+            if(match){
+                alert("True");
+            }else{
+                alert("False");
+            }
+        }   
+       
+        </script>
+    </head> 
+    <body>
+        <!--Input space for user-->
+        <input type="text" id="input1" value=" "/>
+        <input type="text" id="input2" value=" "/>
+    
+        <!--Button-->
+        <p>Click the button below to do a global search</p>
+        <input type="button" value="Search"
+        onclick="RegExp()" />
+ 
+    </body>
+</html>
